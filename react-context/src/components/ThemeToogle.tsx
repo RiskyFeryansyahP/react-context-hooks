@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { useContext } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
-
+/** 
+ * context with class component
 class ThemeToogle extends Component {
     render() {
         return (
@@ -13,5 +14,14 @@ class ThemeToogle extends Component {
         )
     }
 }
+*/
+
+export const ThemeToogle = () => {
+    const { toogleTheme } = useContext(ThemeContext)
+    return (
+        <button onClick={toogleTheme}>Toogle The Theme</button>
+    )
+}
+
 
 export default ThemeToogle
