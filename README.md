@@ -14,3 +14,5 @@
 ```
     cd react-hooks && yarn start
 ```
+
+Risky Feryansyah
